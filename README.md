@@ -3,5 +3,7 @@
 ```
 helm repo add gitea-charts https://dl.gitea.io/charts/
 
-helm install gitea gitea-charts/gitea
+
+kubectl create ns gitea
+helm install gitea gitea-charts/gitea -n gitea
 ```
